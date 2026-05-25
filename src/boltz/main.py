@@ -1314,6 +1314,7 @@ def predict(  # noqa: C901, PLR0915, PLR0912
         model_module = model_cls.load_from_checkpoint(
             checkpoint,
             strict=True,
+            weights_only=False,
             predict_args=predict_args,
             map_location="cpu",
             diffusion_process_args=asdict(diffusion_params),
@@ -1391,6 +1392,7 @@ def predict(  # noqa: C901, PLR0915, PLR0912
         model_module = Boltz2.load_from_checkpoint(
             affinity_checkpoint,
             strict=True,
+            weights_only=False,
             predict_args=predict_affinity_args,
             map_location="cpu",
             diffusion_process_args=asdict(diffusion_params),
