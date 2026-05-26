@@ -41,8 +41,8 @@ boltz = "boltz.main:cli"
 lint = ["ruff"]
 test = ["pytest", "requests"]
 cuda = [
-    "cuequivariance_ops_cu12>=0.5.0",
-    "cuequivariance_ops_torch_cu12>=0.5.0",
+    "cuequivariance_ops_cu13>=0.7",
+    "cuequivariance_ops_torch_cu13>=0.7",
     "cuequivariance_torch>=0.5.0",
 ]
 
